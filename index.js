@@ -1,12 +1,13 @@
 import TelegramBot from 'node-telegram-bot-api';
+import config from 'config';
 import fetch from 'node-fetch';
 import birthday from './birthday.json'; // Birthday your friends or others
 
-const TELEGRAM_TOKEN = ''; // Enter token your bot
-const WEATHER_API_KEY = ''; // Api key http://openweathermap.org/api
+const TELEGRAM_TOKEN = config.get('telegramToken');
+const WEATHER_API_KEY = config.get('weatherApiKey');
+const CITY = config.get('city');
 const WEATHER_URL = 'http://api.openweathermap.org/data/2.5/weather';
 const WEATHER_QUERY = '&units=metric&lang=en&appid=';
-const CITY = 'Ternopil'; // Enter your city
 const PRIVATBANK_COURS =
   'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5';
 
