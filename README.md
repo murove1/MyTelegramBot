@@ -10,5 +10,5 @@ Function:
 # Getting Started
 1. Clone reposetory `git clone https://github.com/murove1/MyTelegramBot`
 2. Install node_modules `npm i`
-3. Enter Telegram-bot token and api key http://openweathermap.org/api
+3. Write in `config/default.json` Telegram-bot token, api key openweathermap and your city
 4. Run `npm start`
